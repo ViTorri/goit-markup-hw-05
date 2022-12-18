@@ -361,6 +361,13 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-accent-color);
+
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
 }
 
 /* ==========================CUSTOMERS========================== */
