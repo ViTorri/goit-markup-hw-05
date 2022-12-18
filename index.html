@@ -30,12 +30,16 @@
         <nav>
           <ul class="site-nav list">
             <li class="nav-item">
-              <a class="link" href="./index.html">Studio</a>
+              <a class="link current-page nav-link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-item">
-              <a class="link" href="./portfolio.html">Portfolio</a>
+              <a class="link nav-link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="nav-item"><a class="link" href="">Contacts</a></li>
+            <li class="nav-item">
+              <a class="link nav-link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <ul class="site-auth list">
@@ -55,7 +59,9 @@
       <section class="section hero">
         <!-- / 1 section -->
         <h1 class="hero-title">Effective Solutions <br />for Your Business</h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button class="hero-btn" type="button" data-modal-open>
+          Order Service
+        </button>
       </section>
 
       <section class="section qualities">
@@ -403,5 +409,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
